@@ -1,0 +1,274 @@
+
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.last {
+    margin-right: 0;
+}
+.intro_left{
+ margin: 50px;
+}
+.two-col {
+    width: 100%;
+    float: left;
+    margin-right: 50%;
+}
+
+.gutter {
+    padding: 10px;
+}
+
+.smd2 {
+    width: 50%;
+}
+
+.col {
+    float: left;
+}
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+/* Hover Effect Styling */
+.hover-effect {
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+p {
+    margin: 0 0 30px;
+    clear: left;
+    padding: 0;
+    line-height: 24px;
+}
+.intro_right{
+    width: max-content;
+}
+.hover-effect img {
+    display: block;
+    -moz-transition: all 7s ease;
+    -o-transition: all 7s ease;
+    -webkit-transition: all 7s ease;
+    transition: all 7s ease;
+    width: 100%;
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+    .two-col {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .smd2 {
+        width: 100%;
+    }
+
+    .col {
+        float: none;
+        width: 100%;
+    }
+
+    .gutter {
+        padding: 5px;
+    }
+}
+.things-to-do {
+    padding: 3% 0 3.5% 0;
+   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000;
+}
+// .section {
+//     width: 100%;
+//     display: block;
+//     margin: 0;
+//     padding: 3% 0 0 0;
+//     overflow: hidden;
+// }
+// .row {
+//     margin-right: -15px;
+//     margin-left: -15px;
+// }
+// .section-head {
+//     margin: 0 0 2.5% 0;
+// }
+// .things-to-do .section-head h2 {
+//     color: #fff;
+// }
+// @media screen and (max-width: 768px) {
+//     .section h2 {
+//         font-size: 18px;
+//         margin: 1% 0;
+//     }
+// }
+// .section-head h2 {
+//     margin: 0;
+//     padding: 0;
+//     letter-spacing: -1px;
+// }
+// .section h2 {
+//     font-family: 'Montserrat', sans-serif;
+//     font-weight: 500;
+//     font-size: 30px;
+//     text-align: center;
+//     color: #036;
+//     margin: 30px 0;
+//     letter-spacing: -0.08px;
+// }
+// .things-to-do .section-head .sub-head {
+//     color: #fff;
+// }
+// @media screen and (max-width: 768px) {
+//     .section-head .sub-head {
+//         font-size: 16px;
+//         max-width: 100%;
+//         font-weight: 100;
+//     }
+// }
+// .section-head .sub-head {
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 18px;
+//     text-align: center;
+//     display: block;
+//     margin: 5px auto;
+//     width: 100%;
+//     max-width: 1024px;
+//     color: #444;
+//     font-weight: 300;
+//     letter-spacing: -0.05px;
+// }
+
+// .wall2 [class*=col-md] {
+//     padding: 10px;
+// }
+// @media (min-width: 768px) {
+//     .col-sm-6 {
+//         width: 50%;
+//     }
+// }
+
+// @media (min-width: 768px) {
+//     .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+//         float: left;
+//     }
+// }
+
+
+
+body{
+    background-color: #a7a7a7;
+}
+.section {
+    padding: 50px 0;
+}
+
+.section-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-head h2 {
+    font-size: 36px;
+    color: #006400; /* Kerala green */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.sub-head {
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #FFA500; /* Accent color */
+    margin: 0 auto 30px;
+}
+
+.wall2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.col-md-4.col-sm-6.col-xs-12 {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.col-md-4.col-sm-6.col-xs-12:hover {
+    transform: scale(1.05);
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.caption-bottom {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #006400; /* Kerala green */
+}
+
+.bg-transform {
+    background: url("https://cdn.pixabay.com/photo/2022/12/09/16/22/munnar-7645637_1280.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .wall2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4.col-sm-6.col-xs-12 {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+h5{
+    color: white;
+    font-size: 60px;
+}
+
+
+.carousel-item img{
+   height: 500px;
+   width: 300px;
+}
+
+
+.dist{
+    margin-left: 40px;
+    width: 90%;
+   
+}
+
+.kerala_intro{
+    width: 95%;
+    margin-top: 50px;
+}
+
+

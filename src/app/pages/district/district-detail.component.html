@@ -1,0 +1,40 @@
+<div *ngIf="id">
+  
+    <h1 class="heading_dis">{{ productName[(id-1)].name }}</h1>  
+
+  </div>
+
+
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let image of productName[(id-1)].images; let i = index" [class.active]="i === 0" class="carousel-item">
+        @for(image of  productName[(id-1)].images;track image.id ){
+        <img [src]="image" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+         
+          <p>{{ productName[(id-1)].description }}</p>
+        </div>}
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class="district_history m-5 p-5">
+  <p class="card-text "><small>{{ productName[(id-1)].history }}</small></p>
+</div>    
+<div>
+<h2 class="detail-head">Main Attractions</h2>
+<div class="details">
+ 
+  <ng-container *ngIf="productName && productName[(id-1)] && productName[(id-1)].attractions">
+    <app-card class="dis-card" *ngFor="let attraction of productName[(id-1)].attractions"
+              [title]="attraction.name"
+              [description]="attraction.description"
+              [src]="attraction.image">
+    </app-card>
+  </ng-container>
+  
+</div>
+</div>

@@ -1,0 +1,153 @@
+h2{
+    font-size: 36px;
+color: #006400; /* Kerala green */
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+
+// .card {
+//     transition: transform 0.2s, box-shadow 0.2s;
+//     border: none;
+//     overflow: hidden;
+//     border-radius: 10px;
+// }
+
+// .card:hover {
+//     transform: translateY(-10px);
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+// }
+
+// .card-img-top {
+//     transition: transform 0.2s;
+//     height: 10rem;
+//     object-fit: cover;
+// }
+
+// .card:hover .card-img-top {
+//     transform: scale(1.05);
+// }
+
+// .card-body {
+//     background-color: #fff;
+//     padding: 1rem;
+//     text-align: center;
+// }
+
+// .card-title {
+//     font-size: 1.25rem;
+//     margin-bottom: 0.5rem;
+// }
+
+// .card-text {
+//     font-size: 1rem;
+//     color: #666;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, border-color 0.3s, color 0.3s;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background-color: #f1f1f1;
+    border-color: #ccc;
+}
+
+.card-img-top {
+    transition: transform 0.3s, filter 0.3s;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.card:hover .card-title {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.card:hover .card-text {
+    color: #333;
+    transform: scale(1.05);
+}
+
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-body {
+    background-color: #fff;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text {
+    color: #666;
+  }
+  

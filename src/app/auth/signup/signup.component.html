@@ -1,0 +1,58 @@
+<div class="container">
+    <h2 class="t-center">Sign Up</h2>
+    <form [formGroup]="signUpForm" >
+        <div class="inputDiv">
+            <label for="username" class="username">Username</label>
+            <div class="userArea">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="username" formControlName="userName" placeholder="Enter User Name" />
+                <div *ngIf="signUpForm.get('userName')?.invalid && signUpForm.get('userName')?.touched">
+                    <div class="text-danger" *ngIf="signUpForm.get('userName')?.errors?.['required']">User Name is required.</div>
+                    <div class="text-danger" *ngIf="signUpForm.get('userName')?.errors?.['minlength']">Minimum length must be 4.</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="inputDiv">
+            <label for="email" class="username">Email</label>
+            <div class="userArea">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" formControlName="email" placeholder="Enter Email" />
+                <div *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched">
+                    <div class="text-danger" *ngIf="signUpForm.get('email')?.errors?.['required']">Email is required.</div>
+                    <div class="text-danger" *ngIf="signUpForm.get('email')?.errors?.['email']">Invalid email format.</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="inputDiv">
+            <label for="password" class="username">Password</label>
+            <div class="userArea">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="password" formControlName="password" placeholder="Enter Password" />
+                <div *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched">
+                    <div class="text-danger" *ngIf="signUpForm.get('password')?.errors?.['required']">Password is required.</div>
+                    <div class="text-danger" *ngIf="signUpForm.get('password')?.errors?.['minlength']">Minimum length must be 6.</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="inputDiv">
+            <label for="confirmPassword" class="username">Confirm Password</label>
+            <div class="userArea">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="confirmPassword" formControlName="confirmPassword" placeholder="Confirm Password" />
+                <div *ngIf="signUpForm.get('confirmPassword')?.invalid && signUpForm.get('confirmPassword')?.touched">
+                    <div class="text-danger" *ngIf="signUpForm.get('confirmPassword')?.errors?.['required']">Confirm Password is required.</div>
+                    <div class="text-danger" *ngIf="signUpForm.get('confirmPassword')?.errors?.['mustMatch']">Passwords must match.</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <div class="formBottom">
+            <p class="signUp">Already have an account?</p>
+            <a routerLink="/login" id="login">Login</a>
+        </div>
+    </form>
+</div>
